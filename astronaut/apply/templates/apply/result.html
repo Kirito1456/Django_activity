@@ -1,0 +1,9 @@
+{% extends "apply/layout.html" %}
+{% block body %}
+    <h1>Astronaut Application Result</h1>
+    <p>{{ result_msg }}</p>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <a href="{% url 'apply:index' %}">Back to Application</a>
+{% endblock body %}
